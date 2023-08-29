@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conferences",
+  "info": {
+    "singularName": "conference",
+    "pluralName": "conferences",
+    "displayName": "Conference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "conference_name": {
+      "type": "string",
+      "required": true
+    },
+    "conference_description": {
+      "type": "text",
+      "required": true
+    },
+    "conference_location": {
+      "type": "string",
+      "required": true
+    },
+    "conference_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "conference_link": {
+      "type": "string"
+    },
+    "conference_headline": {
+      "type": "string"
+    },
+    "conference_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "conference_speakers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::conference-speaker.conference-speaker",
+      "inversedBy": "conferences"
+    },
+    "is_upcoming_conference": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

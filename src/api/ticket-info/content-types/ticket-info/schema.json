@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ticket_infos",
+  "info": {
+    "singularName": "ticket-info",
+    "pluralName": "ticket-infos",
+    "displayName": "ticket_Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ticket_type": {
+      "type": "string",
+      "required": true
+    },
+    "ticket_price": {
+      "type": "string",
+      "required": true
+    },
+    "ticket_perk_1": {
+      "type": "string"
+    },
+    "ticket_perk_2": {
+      "type": "string"
+    },
+    "ticket_perk_3": {
+      "type": "string"
+    },
+    "ticket_perk_4": {
+      "type": "string"
+    },
+    "ticket_perk_5": {
+      "type": "string"
+    },
+    "ticket_perk_6": {
+      "type": "string"
+    },
+    "ticket_perk_7": {
+      "type": "string"
+    }
+  }
+}

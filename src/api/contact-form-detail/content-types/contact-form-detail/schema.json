@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_details",
+  "info": {
+    "singularName": "contact-form-detail",
+    "pluralName": "contact-form-details",
+    "displayName": "Contact_Form_Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sender_mail": {
+      "type": "string",
+      "required": true
+    },
+    "sender_message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

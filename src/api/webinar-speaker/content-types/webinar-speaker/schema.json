@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webinar_speakers",
+  "info": {
+    "singularName": "webinar-speaker",
+    "pluralName": "webinar-speakers",
+    "displayName": "webinar_Speaker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "speaker_name": {
+      "type": "string",
+      "required": true
+    },
+    "speaker_job_description": {
+      "type": "string",
+      "required": true
+    },
+    "speaker_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "speaker_company": {
+      "type": "string",
+      "required": true
+    },
+    "webinars": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::webinar.webinar",
+      "mappedBy": "webinar_speakers"
+    }
+  }
+}

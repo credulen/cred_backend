@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conference_registration_details",
+  "info": {
+    "singularName": "conference-registration-detail",
+    "pluralName": "conference-registration-details",
+    "displayName": "Conference_Reg",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "conference": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::conference.conference"
+    }
+  }
+}

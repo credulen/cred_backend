@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bus_solns",
+  "info": {
+    "singularName": "bus-soln",
+    "pluralName": "bus-solns",
+    "displayName": "bus_soln"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bus_soln_name": {
+      "type": "string",
+      "required": true
+    },
+    "bus_soln_description": {
+      "type": "text",
+      "required": true
+    },
+    "bus_soln_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "bus_soln_form": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bus-soln-form.bus-soln-form",
+      "inversedBy": "bus_solns"
+    }
+  }
+}

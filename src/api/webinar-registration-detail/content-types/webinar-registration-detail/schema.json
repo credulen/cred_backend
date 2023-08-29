@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webinar_registration_details",
+  "info": {
+    "singularName": "webinar-registration-detail",
+    "pluralName": "webinar-registration-details",
+    "displayName": "Webinar_Registration_Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "registerer_full_name": {
+      "type": "string",
+      "required": true
+    },
+    "registerer_email": {
+      "type": "email",
+      "required": true
+    },
+    "registerer_company": {
+      "type": "string",
+      "required": true
+    },
+    "registerer_job_title": {
+      "type": "string",
+      "required": true
+    },
+    "registerer_country": {
+      "type": "string"
+    },
+    "webinar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::webinar.webinar"
+    },
+    "webinar_name": {
+      "type": "string"
+    }
+  }
+}

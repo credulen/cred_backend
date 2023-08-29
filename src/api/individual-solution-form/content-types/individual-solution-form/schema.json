@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "individual_solution_forms",
+  "info": {
+    "singularName": "individual-solution-form",
+    "pluralName": "individual-solution-forms",
+    "displayName": "Ind_Soln_Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone_num": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "employment_status": {
+      "type": "string",
+      "required": true
+    },
+    "job_title": {
+      "type": "string"
+    },
+    "solution_type": {
+      "type": "string",
+      "required": true
+    },
+    "individual_solutions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::individual-solution.individual-solution",
+      "mappedBy": "individual_solution_form"
+    }
+  }
+}

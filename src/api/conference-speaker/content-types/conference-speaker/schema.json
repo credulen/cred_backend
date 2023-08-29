@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conference_speakers",
+  "info": {
+    "singularName": "conference-speaker",
+    "pluralName": "conference-speakers",
+    "displayName": "Conference_Speaker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "speaker_name": {
+      "type": "string",
+      "required": true
+    },
+    "speaker_company": {
+      "type": "string",
+      "required": true
+    },
+    "speaker_job_description": {
+      "type": "string",
+      "required": true
+    },
+    "speaker_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "conferences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::conference.conference",
+      "mappedBy": "conference_speakers"
+    }
+  }
+}
