@@ -38,6 +38,10 @@
     },
     "webinar_name": {
       "type": "string"
+    },
+    "registerer_phonenum": {
+      "type": "string",
+      "required": true
     }
   }
 }
