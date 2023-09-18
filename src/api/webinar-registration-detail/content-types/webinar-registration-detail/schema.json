@@ -36,9 +36,6 @@
       "relation": "oneToOne",
       "target": "api::webinar.webinar"
     },
-    "webinar_name": {
-      "type": "string"
-    },
     "registerer_phonenum": {
       "type": "string",
       "required": true
