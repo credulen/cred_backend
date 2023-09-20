@@ -32,7 +32,7 @@
       "type": "string"
     },
     "registerer_phonenum": {
-      "type": "text",
+      "type": "integer",
       "required": true
     },
     "webinar": {
