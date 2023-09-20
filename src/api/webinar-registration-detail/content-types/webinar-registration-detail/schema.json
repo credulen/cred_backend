@@ -32,14 +32,14 @@
       "type": "string"
     },
 
-    "registerer_phonenum": {
-      "type": "integer",
-      "required": true
-    },
     "webinar": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::webinar.webinar"
+    },
+    "registerer_phone_num": {
+      "type": "integer",
+      "required": true
     }
   }
 }
