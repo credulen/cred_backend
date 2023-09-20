@@ -33,7 +33,7 @@
       "required": true
     },
     "company_size": {
-      "type": "integer"
+      "type": "text"
     },
     "job_title": {
       "type": "string",
