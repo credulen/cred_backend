@@ -112,6 +112,8 @@ module.exports = ({ env }) => ({
       database: env("DATABASE_NAME"),
       user: env("DATABASE_USERNAME"),
       password: env("DATABASE_PASSWORD"),
+      // idleTimeoutMillis: 0,
+      // connectionTimeoutMillis: 0,
       // ssl: env.bool("DATABASE_SSL", false),
       // ssl: { rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false) },
       ssl: {

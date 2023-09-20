@@ -31,14 +31,14 @@
     "registerer_country": {
       "type": "string"
     },
+    "registerer_phonenum": {
+      "type": "text",
+      "required": true
+    },
     "webinar": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::webinar.webinar"
-    },
-    "registerer_phonenum": {
-      "type": "string",
-      "required": true
     }
   }
 }

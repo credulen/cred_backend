@@ -17,11 +17,11 @@
       "required": true
     },
     "email": {
-      "type": "string",
+      "type": "email",
       "required": true
     },
     "phone_num": {
-      "type": "string",
+      "type": "integer",
       "required": true
     },
     "country": {
