@@ -38,7 +38,7 @@
       "target": "api::webinar.webinar"
     },
     "registerer_phone_num": {
-      "type": "integer",
+      "type": "string",
       "required": true
     }
   }
