@@ -36,6 +36,12 @@
     "webinar_date": {
       "type": "datetime",
       "required": true
+    },
+    "web_reg_form_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::web-reg-form-detail.web-reg-form-detail",
+      "inversedBy": "webinars"
     }
   }
 }

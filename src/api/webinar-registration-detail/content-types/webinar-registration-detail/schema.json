@@ -31,7 +31,6 @@
     "registerer_country": {
       "type": "string"
     },
-
     "webinar": {
       "type": "relation",
       "relation": "oneToOne",
