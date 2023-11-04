@@ -50,19 +50,18 @@
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "article"
+      "target": "api::comment.comment"
+    },
+    "highlighted_article": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     },
     "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "articles"
-    },
-    "highlighted_article": {
-      "type": "boolean",
-      "default": false,
-      "required": false
     }
   }
 }

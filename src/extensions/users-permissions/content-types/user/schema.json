@@ -65,12 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "users_permissions_user"
-    },
     "about": {
       "type": "text",
       "maxLength": 100,
@@ -79,8 +73,7 @@
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "users_permissions_user"
+      "target": "api::comment.comment"
     },
     "authorimg": {
       "type": "media",
@@ -89,6 +82,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
