@@ -104,11 +104,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
     connection: {
-      // host: env(
-      //   "DATABASE_HOST",
-      //   "dpg-cjh2v136fquc73e6s790-a.oregon-postgres.render.com"
-      // ),
-      host: env("DATABASE_HOST"),
+      host: env(
+        "DATABASE_HOST",
+        "dpg-cjh2v136fquc73e6s790-a.oregon-postgres.render.com"
+      ),
+      // host: env("DATABASE_HOST"),
       port: env.int("DATABASE_PORT"),
       database: env("DATABASE_NAME"),
       user: env("DATABASE_USERNAME"),
